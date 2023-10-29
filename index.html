@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Análisis de Síntomas COVID-19</title>
+</head>
+<body>
+    <h1>Síntomas del COVID-19</h1>
+    <select name="" id="sintomas-comunes">
+        <option value="">Cansancio</option>
+        <option value="">Congestion nasal</option>
+        <option value="">Diarrea</option>
+        <option value="">Dificultad para respirar</option>
+        <option value="">Dolor de cabeza</option>
+        <option value="">Dolor de garganta</option>
+        <option value="">Dolor de pecho</option>
+        <option value="">Estornudos</option>
+        <option value="">Fiebre</option>
+        <option value="">Malestar fisico</option>
+        <option value="">Nauseas o vomitos</option>
+        <option value="">Perdida del gusto/olfato</option>
+        <option value="">Tos con flemas</option>
+        <option value="">Tos seca</option>
+    </select>
+
+    <button id="btnConsole">Aceptar</button>
+    <!--
+        <ul id="sintomas-comunes">
+            <li>Fiebre</li>
+            <li>Tos seca</li>
+            <li>Cansancio</li>
+            <li>Dificultad para respirar</li>
+            <li>Dolor de garganta</li>
+        </ul>
+    -->
+    <h2>Análisis de Síntomas</h2>
+    <ul id="analisis-sintomas"></ul>
+    <p id="resultados"></p>
+
+    <script src="./js/covid.js"></script>
+
+    <!--
+    <script>
+        const sintomasComunes = document.getElementById("sintomas-comunes");
+        const analisisSintomas = document.getElementById("analisis-sintomas");
+        const mensaje = document.getElementById("mensaje");
+        const sintomasIdentificados = new Set();
+
+        sintomasComunes.addEventListener("click", (event) => {
+            const sintoma = event.target.textContent;
+
+            if (sintomasIdentificados.size >= 3) {
+                mensaje.innerHTML = "<strong style='color: red;'>Posiblemente tienes COVID y debes atenderte inmediatamente en el hospital más cercano.</strong>";
+                return;
+            }
+
+            if (!sintomasIdentificados.has(sintoma)) {
+                sintomasIdentificados.add(sintoma);
+                const li = document.createElement("li");
+                li.textContent = sintoma;
+                analisisSintomas.appendChild(li);
+            }
+        });
+    </script>
+    -->
+</body>
+</html>

@@ -1,0 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+select#sintomas_select {
+    width: auto;
+    height: 20px;
+}
